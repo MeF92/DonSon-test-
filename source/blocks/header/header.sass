@@ -1,0 +1,98 @@
+.header
+  min-height: 115px
+  background: url('../../img/header-bg.jpg') no-repeat
+  background-size: cover
+
+  &__container
+    padding: 7px 9px 0 22px
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__logo
+    position: relative
+    max-width: 203px
+
+    &-text
+      font-size: 14px
+      letter-spacing: -0.2px
+      white-space: nowrap
+      color: $black
+      transform: translateX(-1.5px)
+
+  &__rightPart
+    display: flex
+    margin-top: 29px
+    flex-wrap: wrap
+
+  &__phone
+    max-width: 245px
+    margin-right: 46px
+
+    &-link
+      color: $aqua
+      font-size: 26px
+
+    &-number
+      padding-left: 36px
+      margin-bottom: 4px
+      background: url('../../img/phone.png') no-repeat top left
+      transition: all 0.3s
+      white-space: nowrap
+
+      &:hover
+        transform: scale(1.1)
+
+    &-text
+      font-size: 14px
+      letter-spacing: -0.1px
+      white-space: nowrap
+
+  &__order
+    color: $black
+    margin-top: 6px
+    text-transform: uppercase
+    font-weight: 700
+    background: $yellow
+    font-size: 15px
+    width: 217px
+    height: 37px
+    text-align: center
+    line-height: 37.5px
+    position: relative
+    transition: all 0.3s
+
+    &:before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 2px
+      background: $black
+      top: calc(50% - 1px)
+      left: 0
+
+    &:after
+      content: ''
+      position: absolute
+      width: 20px
+      height: 2px
+      background: $black
+      top: calc(50% - 1px)
+      right: 0
+
+    &:hover
+      background: $black
+      color: #ffffff
+
+@media (max-width: 821px)
+
+  .header
+    padding-bottom: 20px
+    &__logo
+      margin-right: 46px
+
+
+
+

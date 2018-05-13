@@ -1,0 +1,117 @@
+.information
+  min-height: 480px
+  background: url('../../img/text-bg.jpg') no-repeat
+  background-size: cover
+  padding-top: 23px
+  transform: translateY(-48.5px)
+  padding-bottom: 22px
+  position: relative
+
+  &__blanket
+    position: absolute
+    left: 0
+    bottom: -29px
+    z-index: 100
+
+  &__header
+    padding: 25px 23px 25px 22px
+    background: $aqua
+    text-transform: uppercase
+    font-size: 27.6px
+    color: #ffffff
+    font-weight: normal
+
+  &__wrapper
+    max-width: 658px
+    background: #ffffff
+    padding: 18px 19px 10px 22px
+    box-sizing: border-box
+
+  &__subHeader
+    color: $aqua
+    font-size: 23px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 14px
+
+  &__text1, &__text2
+    text-transform: uppercase
+    font-size: 15px
+    color: $black
+    font-weight: 700
+
+  &__text1
+    margin-bottom: 20px
+
+  &__text2
+    margin-bottom: 13px
+
+  &__block
+    border-left: 2px solid $black
+    padding-left: 10px
+    margin-left: 10px
+    margin-bottom: 18px
+
+    &-p1, &-p2
+      margin-bottom: 19px
+
+  &__button
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &-link
+      color: $black
+      margin-top: 6px
+      text-transform: uppercase
+      background: $yellow
+      font-weight: 700
+      font-size: 15px
+      width: 217px
+      height: 37px
+      text-align: center
+      line-height: 37.5px
+      position: relative
+      transition: all 0.3s
+      margin-bottom: 5px
+
+      &:before
+        content: ''
+        position: absolute
+        width: 20px
+        height: 2px
+        background: $black
+        top: calc(50% - 1px)
+        left: 0
+
+      &:after
+        content: ''
+        position: absolute
+        width: 20px
+        height: 2px
+        background: $black
+        top: calc(50% - 1px)
+        right: 0
+
+      &:hover
+        background: $black
+        color: #ffffff
+
+      &:hover + img
+        animation-name: move
+        animation-duration: 0.3s
+        animation-iteration-count: infinite
+        animation-direction: alternate
+        animation-timing-function: linear
+
+@keyframes move
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(5px)
+
+@media (max-width: 707px)
+  .information
+
+    &__blanket
+      display: none

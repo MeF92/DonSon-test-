@@ -1,0 +1,1 @@
+$(".information__button-link").on("click",function(){var o=$(".video").position();$("html, body").stop().animate({scrollTop:o.top},500,"swing")});
