@@ -43,7 +43,7 @@ input, button {
 
 .header {
   min-height: 115px;
-  background: url("../../img/header-bg.jpg") no-repeat;
+  background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover; }
   .header__container {
     padding: 7px 9px 0 22px; }
@@ -73,7 +73,7 @@ input, button {
     .header__phone-number {
       padding-left: 36px;
       margin-bottom: 4px;
-      background: url("../../img/phone.png") no-repeat top left;
+      background: url("../img/phone.png") no-repeat top left;
       transition: all 0.3s;
       white-space: nowrap; }
       .header__phone-number:hover {
@@ -173,7 +173,7 @@ input, button {
 
 .information {
   min-height: 480px;
-  background: url("../../img/text-bg.jpg") no-repeat;
+  background: url("../img/text-bg.jpg") no-repeat;
   background-size: cover;
   padding-top: 23px;
   transform: translateY(-48.5px);
